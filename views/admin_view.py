@@ -5,7 +5,7 @@ from controllers.movie_controller import MovieController
 from views.create_movie_view import CreateMovieView
 from views.update_movie_view import UpdateMovieView
 from views.movie_detail_admin_view import MovieDetailAdminView
-from views.get_api_view import GetApiView
+import threading
 
 
 class MovieAdminView():
@@ -146,12 +146,11 @@ class MovieAdminView():
         movies_to_display = self.movies_temp if hasattr(self, 'movies_temp') else self.movies
 
         # Thêm dữ liệu mới vào Treeview
-        # Thêm dữ liệu mới vào Treeview
         for index, movie in enumerate(movies_to_display, start=1):
             showtime = movie["showtimes"]["start_time"] + " - " + movie["showtimes"]["end_time"] if movie[
                 "showtimes"] else "N/A"
             duration = f"{movie['duration_minutes']} phút"
-            self.tree1.insert('', 'end', values=(index,movie["id"], movie["name"], duration, showtime, movie["release_date"], movie["room"], movie["status"]))
+            self.tree1.insert('', 'end', values=(index,movie["id"], movie["name"], duration, showtime, movie["show_date"], movie["room"], movie["status"]))
 
     def search_movie(self):
         # Lấy giá trị từ ô nhập liệu
@@ -237,12 +236,31 @@ class MovieAdminView():
             if movie:
                 MovieDetailAdminView(self.admin_win, movie, values)
     def open_login_admin_view(self, event):
-        self.admin_win.destroy()  # Đóng cửa sổ admin
-        master_window = self.admin_win.master
-        master_window.deiconify()  # Hiển thị lại cửa sổ login
+        if messagebox.askyesno("Đăng xuất", "Bạn có chắc muốn đăng xuất?"):
+            self.admin_win.destroy()  # Đóng cửa sổ admin
+            master_window = self.admin_win.master
+            master_window.deiconify()  # Hiển thị lại cửa sổ login
 
     def get_top_popular_movie(self):
-        GetApiView(self.admin_win)
+        self.show_loading_screen()
+        threading.Thread(target=self._get_data_and_update_ui, daemon=True).start()
+
+    def _get_data_and_update_ui(self):
+        MovieController.get_api()  # gọi API ở đây
+        self.root.after(0, self.close_loading_screen)
+        self.movies = Movie.get_movies()
+        self.refresh_treeview()
+
+    def show_loading_screen(self):
+        self.loading_window = Toplevel(self.root)
+        self.loading_window.title('Đang chờ...')
+        self.loading_window.geometry('300x100')
+        Label(self.loading_window, text="🔄 Đang lấy dữ liệu từ API...", font=("Arial", 12)).pack(padx=20, pady=30)
+        self.loading_window.grab_set()
+
+    def close_loading_screen(self):
+        if self.loading_window:
+            self.loading_window.destroy()
 
     # Tắt chương trình khi tắt cửa sổ này
     def quit_app(self):

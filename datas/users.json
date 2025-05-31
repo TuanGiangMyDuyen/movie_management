@@ -23,6 +23,14 @@
             "email": "20032005myduyen@gmail.com",
             "phone": "0364949597",
             "dob": "20/03/2005"
+        },
+        {
+            "username": "yang05",
+            "password": "123",
+            "fullname": "",
+            "email": "a@a.com",
+            "phone": "",
+            "dob": ""
         }
     ],
     "admins": [

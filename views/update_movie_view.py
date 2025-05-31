@@ -150,7 +150,7 @@ class UpdateMovieView:
         self.release_date_entry = DateEntry(add_frame, font=entry_font, width=28, background='darkblue',
                                             foreground='white', borderwidth=2, date_pattern='dd/mm/yyyy')
         self.release_date_entry.grid(row=11, column=1, padx=5, pady=5)
-        date_obj = datetime.strptime(self.admin_view.movie['release_date'], "%d/%m/%Y").date()
+        date_obj = datetime.strptime(self.admin_view.movie['show_date'], "%d/%m/%Y").date()
         self.release_date_entry.set_date(date_obj)
 
         # Phòng chiếu
@@ -264,7 +264,7 @@ class UpdateMovieView:
             "language": self.language_entry.get(),
             "rated": self.rated_entry.get(),
             "description": self.description_entry.get(),
-            "release_date": self.release_date_entry.get(),
+            "show_date": self.release_date_entry.get(),
             "duration_minutes": self.duration_entry.get(),
             "status": self.status_combobox.get(),
             "showtime": self.showtime_combobox.get(),

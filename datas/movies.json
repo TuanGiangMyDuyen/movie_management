@@ -1,122 +1,142 @@
 [
-  {
-    "id": "1a2b3c4d-0001-1111-2222-abcdef123456",
-    "name": "Inception",
-    "genre": "Khoa học viễn tưởng",
-    "director": "Christopher Nolan",
-    "actors": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page"],
-    "language": "Tiếng Anh",
-    "rated": "PG-13",
-    "description": "Một tên trộm chuyên nghiệp đánh cắp thông tin bằng cách xâm nhập vào giấc mơ của người khác.",
-    "release_date": "16/07/2010",
-    "duration_minutes": 148,
-    "status": "Đã chiếu",
-    "showtime": "20:00",
-    "room": "PC001",
-    "total_seats": 50,
-    "available_seats": 20,
-    "ticket_price": 180000,
-    "showtime_type": "2D",
-    "poster_url": "https://res.cloudinary.com/dyvkrlz5i/image/upload/v1748331776/51zUbui_gbL._AC__cmbdxe.jpg",
-    "showtimes": {
-      "start_time": "20:00",
-      "end_time": "22:28"
+    {
+        "id": "12aef0ef-e7ed-4421-a60b-567e8d520771",
+        "name": "Mật Vụ Phụ Hồ",
+        "genre": "Phim Hành Động",
+        "director": "David Ayer",
+        "actors": [
+            "Jason Statham",
+            "Jason Flemyng",
+            "Merab Ninidze"
+        ],
+        "language": "en",
+        "rated": "R",
+        "description": "Levon Cade - cựu biệt kích tinh nhuệ thuộc lực lượng Thủy quân Lục chiến Hoàng gia Anh. Sau khi nghỉ hưu, anh sống cuộc đời yên bình là một công nhân xây dựng tại Chicago (Mỹ). Levon có mối quan hệ rất tốt với gia đình ông chủ Joe Garcia (Michael Peña). Một ngày nọ, cô con gái tuổi teen Jenny (Arianna Rivas) của Joe bị bắt cóc khiến chàng cựu quân nhân phải sử dụng lại các kỹ năng giết chóc của mình để giúp đỡ.",
+        "show_date": "31/05/2025",
+        "duration_minutes": 116,
+        "status": "Ngưng chiếu",
+        "showtime": "09:00",
+        "room": "PC003",
+        "total_seats": 50,
+        "available_seats": 50,
+        "ticket_price": 120000,
+        "showtime_type": "3D",
+        "poster_url": "https://image.tmdb.org/t/p/w500/qmVVc6ZVw9PEwkr4G0Obmlg7woC.jpg",
+        "showtimes": {
+            "start_time": "09:00",
+            "end_time": "10:56"
+        }
+    },
+    {
+        "id": "638bf1f3-2e9c-435a-9522-7f1d3bcbca35",
+        "name": "Bí Mật Kinh Hoàng",
+        "genre": "Phim Kinh Dị",
+        "director": "David F. Sandberg",
+        "actors": [
+            "Ella Rubin",
+            "Michael Cimino",
+            "Odessa A'zion"
+        ],
+        "language": "en",
+        "rated": "R",
+        "description": "Không có",
+        "show_date": "01/01/2001",
+        "duration_minutes": 103,
+        "status": "Đang chiếu",
+        "showtime": "09:00",
+        "room": "PC002",
+        "total_seats": 50,
+        "available_seats": 50,
+        "ticket_price": 120000,
+        "showtime_type": "2D",
+        "poster_url": "https://image.tmdb.org/t/p/w500/544g85T0znqQxFOWzwOdUEPpZkl.jpg",
+        "showtimes": {
+            "start_time": "09:00",
+            "end_time": "10:43"
+        }
+    },
+    {
+        "id": "2d735a3c-4b3e-42f2-ac2c-2407289d8ce1",
+        "name": "Lưỡi hái tử thần 6: Huyết thống",
+        "genre": "Phim Kinh Dị",
+        "director": "Zach Lipovsky",
+        "actors": [
+            "Kaitlyn Santa Juana",
+            "Teo Briones",
+            "Rya Kihlstedt"
+        ],
+        "language": "en",
+        "rated": "R",
+        "description": "Thương hiệu kinh dị đình đám Hollywood Final Destination sẽ trở lại với phần phim mới, hứa hẹn khuấy đảo phòng vé mùa hè 2025. Final Destination: Bloodlines là phần thứ 6 trong series, và cho đến hiện tại, các thông tin về nội dung phần phim này vẫn đang được giữ kín. Bộ đôi Zach Lipovsky và Adam Stein được chọn từ hơn 200 ứng viên để ngồi ghế đạo diễn, trong khi Guy Busick – biên kịch của Ready or Not sẽ chấp bút cho bộ phim. Tony Todd – gương mặt quen thuộc của series cũng sẽ trở lại trong phần 6 với vai diễn William Bludworth.",
+        "show_date": "01/01/2001",
+        "duration_minutes": 110,
+        "status": "Đang chiếu",
+        "showtime": "09:00",
+        "room": "PC001",
+        "total_seats": 50,
+        "available_seats": 50,
+        "ticket_price": 120000,
+        "showtime_type": "2D",
+        "poster_url": "https://image.tmdb.org/t/p/w500/6WxhEvFsauuACfv8HyoVX6mZKFj.jpg",
+        "showtimes": {
+            "start_time": "09:00",
+            "end_time": "10:50"
+        }
+    },
+    {
+        "id": "0f5a557c-1fa8-48da-ad82-f610ee2972fb",
+        "name": "Một bộ phim Minecraft",
+        "genre": "Phim Gia Đình",
+        "director": "Jared Hess",
+        "actors": [
+            "Jason Momoa",
+            "Jack Black",
+            "Sebastian Eugene Hansen"
+        ],
+        "language": "en",
+        "rated": "PG",
+        "description": "Chào mừng bạn đến với thế giới của Minecraft, nơi sự sáng tạo không chỉ giúp bạn chế tạo mà còn là yếu tố quan trọng để sống sót! Bốn kẻ lạc lõng - Garrett “The Garbage Man” Garrison (Momoa), Henry (Hansen), Natalie (Myers) và Dawn (Brooks) - bất ngờ gặp rắc rối khi họ bị kéo qua cánh cửa bí ẩn dẫn đến Overworld: một thế giới kỳ lạ được tạo bởi những khối lập phương và phát triển nhờ vào trí tưởng tượng. Để trở về nhà, họ cần phải làm chủ được thế giới này (và bảo vệ nó khỏi những thực thể tà ác như Piglins và Thây Ma) trong khi dấn thân vào chuyến phiêu lưu màu nhiệm với một thợ chế tạo chuyên nghiệp và khó lường - Steve (Black). Chuyến hành trình này sẽ thách thức sự can đảm của cả năm người, thúc đẩy họ tìm lại với những phẩm chất làm nên sự đặc biệt của riêng mình,… đồng thời là những kỹ năng cần thiết để trở lại với thế giới thật.",
+        "show_date": "01/01/2001",
+        "duration_minutes": 101,
+        "status": "Đang chiếu",
+        "showtime": "09:00",
+        "room": "PC001",
+        "total_seats": 50,
+        "available_seats": 50,
+        "ticket_price": 120000,
+        "showtime_type": "2D",
+        "poster_url": "https://image.tmdb.org/t/p/w500/wRrGBv4uNofBVyShxfS0iugbcm8.jpg",
+        "showtimes": {
+            "start_time": "09:00",
+            "end_time": "10:41"
+        }
+    },
+    {
+        "id": "2248019a-ccd8-4973-9207-1ab89ad84c15",
+        "name": "Lilo & Stitch",
+        "genre": "Phim Gia Đình",
+        "director": "Dean Fleischer Camp",
+        "actors": [
+            "Maia Kealoha",
+            "Sydney Agudong",
+            "Chris Sanders"
+        ],
+        "language": "en",
+        "rated": "PG",
+        "description": "",
+        "show_date": "01/06/2025",
+        "duration_minutes": 108,
+        "status": "Đang chiếu",
+        "showtime": "09:00",
+        "room": "PC001",
+        "total_seats": 50,
+        "available_seats": 50,
+        "ticket_price": 120000,
+        "showtime_type": "2D",
+        "poster_url": "https://image.tmdb.org/t/p/w500/aOfmWQHIdunw4Xnc4ZL7DUDDgNl.jpg",
+        "showtimes": {
+            "start_time": "09:00",
+            "end_time": "10:48"
+        }
     }
-  },
-  {
-    "id": "2b3c4d5e-0002-2222-3333-fedcba654321",
-    "name": "The Dark Knight",
-    "genre": "Hành động",
-    "director": "Christopher Nolan",
-    "actors": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
-    "language": "Tiếng Anh",
-    "rated": "PG-13",
-    "description": "Batman chiến đấu chống lại Joker để bảo vệ Gotham City.",
-    "release_date": "18/07/2008",
-    "duration_minutes": 152,
-    "status": "Đã chiếu",
-    "showtime": "19:00",
-    "room": "PC002",
-    "total_seats": 50,
-    "available_seats": 25,
-    "ticket_price": 200000,
-    "showtime_type": "2D",
-    "poster_url": "https://res.cloudinary.com/dyvkrlz5i/image/upload/v1748331822/download_dtmesp.jpg",
-    "showtimes": {
-      "start_time": "19:00",
-      "end_time": "21:32"
-    }
-  },
-  {
-    "id": "3c4d5e6f-0003-3333-4444-123456abcdef",
-    "name": "Titanic",
-    "genre": "Tình cảm",
-    "director": "James Cameron",
-    "actors": ["Leonardo DiCaprio", "Kate Winslet"],
-    "language": "Tiếng Anh",
-    "rated": "PG-13",
-    "description": "Chuyện tình lãng mạn trên con tàu Titanic trước khi gặp thảm họa.",
-    "release_date": "19/12/1997",
-    "duration_minutes": 195,
-    "status": "Đã chiếu",
-    "showtime": "18:00",
-    "room": "PC003",
-    "total_seats": 40,
-    "available_seats": 10,
-    "ticket_price": 170000,
-    "showtime_type": "2D",
-    "poster_url": "https://res.cloudinary.com/dyvkrlz5i/image/upload/v1748331857/images_ycr4yx.jpg",
-    "showtimes": {
-      "start_time": "18:00",
-      "end_time": "21:15"
-    }
-  },
-  {
-    "id": "4d5e6f7g-0004-4444-5555-abcdef654321",
-    "name": "Avengers: Endgame",
-    "genre": "Siêu anh hùng",
-    "director": "Anthony Russo, Joe Russo",
-    "actors": ["Robert Downey Jr.", "Chris Evans", "Scarlett Johansson"],
-    "language": "Tiếng Anh",
-    "rated": "PG-13",
-    "description": "Các siêu anh hùng tập hợp lại để đánh bại Thanos và cứu vũ trụ.",
-    "release_date": "26/04/2019",
-    "duration_minutes": 181,
-    "status": "Đã chiếu",
-    "showtime": "21:00",
-    "room": "PC004",
-    "total_seats": 60,
-    "available_seats": 15,
-    "ticket_price": 220000,
-    "showtime_type": "3D",
-    "poster_url": "https://res.cloudinary.com/dyvkrlz5i/image/upload/v1748331888/81ExhpBEbHL._AC_SY679__edhrcg.jpg",
-    "showtimes": {
-      "start_time": "21:00",
-      "end_time": "23:61"
-    }
-  },
-  {
-    "id": "5e6f7g8h-0005-5555-6666-fedcba123456",
-    "name": "Parasite",
-    "genre": "Kinh dị, Chính kịch",
-    "director": "Bong Joon Ho",
-    "actors": ["Song Kang-ho", "Lee Sun-kyun", "Cho Yeo-jeong"],
-    "language": "Tiếng Hàn",
-    "rated": "R",
-    "description": "Một gia đình nghèo tìm cách xâm nhập vào cuộc sống của một gia đình giàu có.",
-    "release_date": "30/05/2019",
-    "duration_minutes": 132,
-    "status": "Đã chiếu",
-    "showtime": "17:00",
-    "room": "PC005",
-    "total_seats": 45,
-    "available_seats": 22,
-    "ticket_price": 160000,
-    "showtime_type": "2D",
-    "poster_url": "https://res.cloudinary.com/dyvkrlz5i/image/upload/v1748331911/71c05lTE03L._AC_SY679__jlgvtc.jpg",
-    "showtimes": {
-      "start_time": "17:00",
-      "end_time": "19:12"
-    }
-  }
 ]

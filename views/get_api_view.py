@@ -61,7 +61,7 @@ class GetApiView:
         self.detail_text.pack(fill="both", expand=True, padx=10)
 
         for movie in self.movies:
-            self.tree.insert("", "end", values=(movie["title"], movie["release_date"], movie["vote_average"]))
+            self.tree.insert("", "end", values=(movie["title"], movie["show_date"], movie["vote_average"]))
 
         self.tree.bind("<<TreeviewSelect>>", self.show_movie_details)
 

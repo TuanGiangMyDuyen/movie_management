@@ -141,7 +141,8 @@ class MovieUserView:
             frame_description = Frame(info_frame, bg="#1E2029")
             Label(frame_description, text="Mô tả:", bg="#1E2029", fg="white", font=("Arial", 10, "bold")).pack(
                 side="left", anchor="n")
-            Label(frame_description, text=f"{movie["description"]}", bg="#1E2029", fg="white", font=("Arial", 9),
+            short_description = " ".join(movie["description"].split()[:7]) + "..."
+            Label(frame_description, text=short_description, bg="#1E2029", fg="white", font=("Arial", 9),
                   justify="left", wraplength=150, anchor="nw").pack(side="left")
             frame_description.pack(anchor="w", padx=3)
 

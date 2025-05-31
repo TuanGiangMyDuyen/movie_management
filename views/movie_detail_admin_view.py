@@ -8,7 +8,7 @@ class MovieDetailAdminView:
     def __init__(self, parent, movie, values, update_callback=None):
         self.detail_win = Toplevel(parent)
         self.detail_win.title("Chi tiết phim")
-        self.detail_win.geometry("600x400+400+200")
+        self.detail_win.geometry("700x650+400+50")
         self.detail_win.config(bg="#213448")
         self.update_callback = update_callback  # Callback để cập nhật danh sách phim
 
@@ -24,13 +24,12 @@ class MovieDetailAdminView:
         label_title_color = "black"
         label_value_color = "#333333"
 
-        # Tạo Frame và Label cho từng thông tin phim (tiêu đề và giá trị trên cùng một hàng)
         # Tạo Frame cha chứa frame pos và frame info
         main_container = Frame(self.detail_win_fra, bg="#F3F3E0")
         main_container.pack(fill="both", expand=True, padx=5, pady=5)
         # Frame chứa poster (bên trái)
         pos_frame = Frame(main_container, bg="#F3F3E0")
-        pos_frame.pack(side="left", fill="y", padx=(0, 20))
+        pos_frame.pack(side="left", fill="y", padx=(0, 5))
 
         # Thêm poster phim
         poster_url = movie['poster_url']
@@ -52,11 +51,11 @@ class MovieDetailAdminView:
             Label(pos_frame, text="Poster\nKhông có ảnh", width=30, height=15, bg="gray").pack()
         # Frame chứa thông tin (bên phải)
         info_frame = Frame(main_container, bg="#F3F3E0")
-        info_frame.pack(side="right", fill="both", expand=True)
+        info_frame.pack(side="left", fill="both", expand=True)
 
         # ID_Phim
         id_frame = Frame(info_frame, bg="#DAD3BE")
-        id_frame.pack(fill="x", padx=(3, 5), pady=(5, 0))
+        id_frame.pack(fill="x", padx=(3, 5), pady=(3, 0))
         Label(id_frame, text="ID_Phim: ", font=label_title_font, fg=label_title_color, bg="#DAD3BE").pack(side="left")
         Label(id_frame, text=f"{movie['id']}", font=label_value_font, fg=label_value_color, bg="#DAD3BE").pack(
             side="left")
@@ -71,9 +70,10 @@ class MovieDetailAdminView:
         # Mô tả
         des_frame = Frame(info_frame, bg="#DAD3BE")
         des_frame.pack(fill="x", padx=(3, 5))
-        Label(des_frame, text="Mô tả: ", font=label_title_font, fg=label_title_color, bg="#DAD3BE").pack(side="left")
-        Label(des_frame, text=f"{movie['description']}", font=label_value_font, fg=label_value_color,
-              bg="#DAD3BE").pack(side="left")
+        Label(des_frame, text="Mô tả: ", font=label_title_font, fg=label_title_color, bg="#DAD3BE").pack(side="left",anchor="n")
+        description_label = Label(des_frame,text=f"{movie['description']}",font=label_value_font,fg=label_value_color,bg="#DAD3BE",
+            wraplength=info_frame.winfo_screenwidth() - 150, justify="left", anchor="nw")
+        description_label.pack(side="left", fill="x", expand=True)
         # Thể loại
         genre_frame = Frame(info_frame, bg="#DAD3BE")
         genre_frame.pack(fill="x", padx=(3, 5))
@@ -119,7 +119,15 @@ class MovieDetailAdminView:
         showtime_frame.pack(fill="x", padx=(3, 5))
         Label(showtime_frame, text="Suất chiếu: ", font=label_title_font, fg=label_title_color, bg="#F3F3E0").pack(
             side="left")
-        Label(showtime_frame, text=f"{values[4]}", font=label_value_font, fg=label_value_color, bg="#F3F3E0").pack(
+        Label(showtime_frame, text=f"{movie['showtimes']['start_time']} - {movie['showtimes']['end_time']}", font=label_value_font, fg=label_value_color, bg="#F3F3E0").pack(
+            side="left")
+
+        # Xếp hạng
+        rated_frame = Frame(info_frame, bg="#F3F3E0")
+        rated_frame.pack(fill="x", padx=(3, 5))
+        Label(rated_frame, text="Xếp hạng: ", font=label_title_font, fg=label_title_color, bg="#F3F3E0").pack(
+            side="left")
+        Label(rated_frame, text=f"{movie['rated']}", font=label_value_font, fg=label_value_color, bg="#F3F3E0").pack(
             side="left")
 
         # Phòng chiếu
@@ -127,14 +135,14 @@ class MovieDetailAdminView:
         room_frame.pack(fill="x", padx=(3, 5))
         Label(room_frame, text="Phòng chiếu: ", font=label_title_font, fg=label_title_color, bg="#F3F3E0").pack(
             side="left")
-        Label(room_frame, text=f"{values[5]}", font=label_value_font, fg="#EB5B00", bg="#F3F3E0").pack(side="left")
+        Label(room_frame, text=f"{movie['room']}", font=label_value_font, fg="#EB5B00", bg="#F3F3E0").pack(side="left")
 
         # Trạng thái
         status_frame = Frame(info_frame, bg="#F3F3E0")
         status_frame.pack(fill="x", padx=(3, 5))
         Label(status_frame, text="Trạng thái: ", font=label_title_font, fg=label_title_color, bg="#F3F3E0").pack(
             side="left")
-        Label(status_frame, text=f"{values[6]}", font=label_value_font, fg="green", bg="#F3F3E0").pack(side="left")
+        Label(status_frame, text=f"{movie['status']}", font=label_value_font, fg="green", bg="#F3F3E0").pack(side="left")
 
         # Giá vé
         price_frame = Frame(info_frame, bg="#F3F3E0")
@@ -146,3 +154,8 @@ class MovieDetailAdminView:
         # Nút Đóng
         Button(self.detail_win, width=50, text="Đóng", font=("Arial", 10, "bold"), bg="#F0BB78",
                activebackground="#F0BB78", bd=0, command=self.detail_win.destroy).pack(fill="x", padx=(5, 5))
+        # Cập nhật wraplength khi cửa sổ thay đổi kích thước
+        def update_wraplength(event):
+            description_label.config(wraplength=event.width - 150)
+
+        info_frame.bind("<Configure>", update_wraplength)

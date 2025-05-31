@@ -1,42 +1,81 @@
 import requests
 import time
+import uuid
+from utils.calculate_end_time import CalculateEndTime
+from datetime import datetime
+
 class GetApi:
     def __init__(self):
         self.API_KEY = '4aa4c0549bb26992be70be72b02dda14'
+        self.base_image_url = "https://image.tmdb.org/t/p/w500"
 
     def get_movie_info_by_id(self, movie_id):
-        details_url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={self.API_KEY}"
+        # Lấy thông tin chi tiết
+        details_url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={self.API_KEY}&language=vi"
         details_response = requests.get(details_url)
         movie_details = details_response.json()
 
+        # Lấy đạo diễn và diễn viên
         credits_url = f"https://api.themoviedb.org/3/movie/{movie_id}/credits?api_key={self.API_KEY}"
         credits_response = requests.get(credits_url)
         credits = credits_response.json()
 
-        base_image_url = "https://image.tmdb.org/t/p/w300"
+        # Lấy thông tin phân loại độ tuổi
+        rating_url = f"https://api.themoviedb.org/3/movie/{movie_id}/release_dates?api_key={self.API_KEY}"
+        rating_response = requests.get(rating_url)
+        rating_data = rating_response.json()
+        rated = "Không rõ"
+        for country in rating_data.get("results", []):
+            if country["iso_3166_1"] == "US":
+                for rel in country["release_dates"]:
+                    if rel.get("certification"):
+                        rated = rel["certification"]
+                        break
+
+        # Xử lý poster
         poster_path = movie_details.get('poster_path', '')
-        poster_url = f"{base_image_url}{poster_path}" if poster_path else None
+        poster_url = f"{self.base_image_url}{poster_path}" if poster_path else ""
 
-        directors = [crew['name'] for crew in credits.get('crew', []) if crew['job'] == 'Director']
+        # Lấy đạo diễn
+        directors = [crew['name'] for crew in credits.get('crew', []) if crew.get('job') == 'Director']
+        director = directors[0] if directors else "Không rõ"
+
+        # Lấy diễn viên chính
+        actors = [actor['name'] for actor in credits.get('cast', [])[:3]]
+
+        # Lấy thể loại
         genres = [genre['name'] for genre in movie_details.get('genres', [])]
+        genre = genres[0] if genres else "Không rõ"
 
+        # Ngôn ngữ
+        language = movie_details.get('original_language', 'en')
+        # Tạo dữ liệu phim theo định dạng chuẩn
         movie_info = {
-            'title': movie_details.get('title', ''),
-            'original_title': movie_details.get('original_title', ''),
-            'release_date': movie_details.get('release_date', ''),
-            'runtime': movie_details.get('runtime', 0),
-            'genres': genres,
-            'directors': directors,
-            'overview': movie_details.get('overview', ''),
-            'poster_url': poster_url,
-            'vote_average': movie_details.get('vote_average', 0)
+            "id": str(uuid.uuid4()),
+            "name": movie_details.get('title', ''),
+            "genre": genre,
+            "director": director,
+            "actors": actors,
+            "language": language,
+            "rated": rated,
+            "description": movie_details.get('overview', 'Không có mô tả.'),
+            "show_date": "01/01/2001",
+            "duration_minutes": movie_details.get('runtime', 0),
+            "status": "Đang chiếu",  # placeholder
+            "showtime": "09:00",  # placeholder
+            "room": "PC001",  # placeholder
+            "total_seats": 50,  # placeholder
+            "available_seats": 50,  # placeholder
+            "ticket_price": 120000,  # placeholder
+            "showtime_type": "2D",  # placeholder
+            "poster_url": poster_url,
+            "showtimes": CalculateEndTime.calculate_end_time("09:00", movie_details.get('runtime', 0))
         }
 
         return movie_info
 
-
     def get_top_popular_movies(self, limit):
-        url = f"https://api.themoviedb.org/3/movie/popular?api_key={self.API_KEY}&language=en-US&page=1"
+        url = f"https://api.themoviedb.org/3/movie/popular?api_key={self.API_KEY}&language=vi&page=1"
         response = requests.get(url)
         data = response.json()
 

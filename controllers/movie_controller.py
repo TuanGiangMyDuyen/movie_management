@@ -3,6 +3,7 @@ from utils.cloudinary import Cloudinary
 from models.movie_model import Movie
 from utils.calculate_end_time import CalculateEndTime
 import uuid
+from utils.get_api import GetApi
 
 
 class MovieController:
@@ -29,7 +30,7 @@ class MovieController:
         movies = Movie.get_movies()
         for movie in movies:
             if self.movieInfo['showtime'] == movie['showtimes']['start_time'] \
-            and self.movieInfo['room'] == movie['room'] and self.movieInfo['release_date'] == movie['release_date']:
+            and self.movieInfo['room'] == movie['room'] and self.movieInfo['show_date'] == movie['show_date']:
                 return False, "Đã có phim cùng lịch tồn tại!"
 
         url, message = Cloudinary.upload_photo(self.movieInfo['poster_url'])
@@ -81,6 +82,15 @@ class MovieController:
         isValid, message = MovieValidation.validate_movie_info(self.movieInfo)
         if not isValid:
             return False, message
+
+        # Kiểm tra có trùng lịch hay không
+        movies = Movie.get_movies()
+        for movie in movies:
+            if movie['id'] == id:
+                continue
+            if self.movieInfo['showtime'] == movie['showtimes']['start_time'] \
+            and self.movieInfo['room'] == movie['room'] and self.movieInfo['show_date'] == movie['show_date']:
+                return False, "Đã có phim cùng lịch tồn tại!"
 
         # Nếu ảnh được thay đổi thì mới upload lên cloud
         def is_local_file(path):
@@ -146,3 +156,19 @@ class MovieController:
             filtered_movies = movies
 
         return filtered_movies
+
+    @staticmethod
+    def get_api():
+        get_api = GetApi()
+        movies = Movie.get_movies()
+        movies_api = get_api.get_top_popular_movies(5)
+        for movie_api in movies_api:
+            flag = True
+            for movie in movies:
+                if movie_api['name'] == movie['name']:
+                    flag = False
+                    break
+            if flag:
+                movie = {"id": str(uuid.uuid4()), **movie_api}
+                movie = Movie(movie)
+                movie.save_movie()

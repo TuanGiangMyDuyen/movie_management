@@ -8,7 +8,7 @@ class User:
         json_handler = JSONHandler("users.json")
         users = json_handler.read_json()
         if not users:
-            users = {'users': []}
+            users = {'users': [], 'admins': []}
             json_handler.write_json(users)
         for user in users[role]:
             if user["username"] == self.userInfo['username']:

@@ -117,8 +117,8 @@ class CreateMovieView:
         self.description_entry = Entry(add_frame, font=entry_font, width=30)
         self.description_entry.grid(row=8, column=1, padx=5, pady=5)
 
-        # Định hạng (rated)
-        Label(add_frame, text="Định hạng: ", font=label_font, bg="#F3F3E0").grid(row=9, column=0, padx=5, pady=5,
+        # Xếp hạng (rated)
+        Label(add_frame, text="Xếp hạng: ", font=label_font, bg="#F3F3E0").grid(row=9, column=0, padx=5, pady=5,
                                                                                  sticky="w")
         self.rated_entry = Entry(add_frame, font=entry_font, width=30)
         self.rated_entry.grid(row=9, column=1, padx=5, pady=5)
@@ -243,7 +243,7 @@ class CreateMovieView:
             "language": self.language_entry.get(),
             "rated": self.rated_entry.get(),
             "description": self.description_entry.get(),
-            "release_date": self.release_date_entry.get(),
+            "show_date": self.release_date_entry.get(),
             "duration_minutes": self.duration_entry.get(),
             "status": self.status_combobox.get(),
             "showtime": self.showtime_combobox.get(),
