@@ -33,16 +33,16 @@
 ## 📦 Hướng dẫn cài đặt
 
 ### 1. Tải file cài đặt
-- Tải file `MovieManagementSetup.exe` từ kho lưu trữ hoặc liên hệ nhà phát triển.
+- Tải file `Z+PlusCinema.exe` [Z+PlusCinema](https://github.com/TuanGiangMyDuyen/movie_management/releases/download/v1.5/Z+PlusCinema.exe).
 
 ### 2. Cài đặt
-- Chạy file `MovieManagementSetup.exe`.
+- Chạy file `Z+PlusCinema.exe`.
 - Làm theo hướng dẫn trên màn hình để cài vào thư mục mặc định:  
   `C:\Program Files\MovieManagementApp`
 
 ### 3. Chạy ứng dụng
-- Mở ứng dụng từ Start Menu với biểu tượng **"Movie Management"**.
-- Đăng nhập bằng tài khoản mặc định hoặc tạo tài khoản mới.
+- Mở ứng dụng từ Start Menu.
+- Tạo tài khoản mới để sử dụng.
 
 ---
 
@@ -50,14 +50,14 @@
 
 ### Đăng nhập
 - Nhập tên người dùng và mật khẩu để truy cập.
-- **Tài khoản mặc định**:  
+- **Tài khoản mặc định (admin)**:  
   `Username: admin`  
   `Password: admin`
 
 ### Đăng ký tài khoản mới
 - Nhấn vào nút **"Đăng ký"** tại giao diện đăng nhập.
-- Nhập đầy đủ thông tin người dùng: tên đăng nhập, mật khẩu, email.
-- Nhấn **"Xác nhận"** để tạo tài khoản.
+- Nhập đầy đủ thông tin người dùng: tên đăng nhập, mật khẩu, email,...
+- Nhấn **"Hoàn thành"** để tạo tài khoản.
 - Sau khi đăng ký thành công, bạn có thể quay lại giao diện đăng nhập để sử dụng tài khoản mới.
 
 ### Quản lý phim
