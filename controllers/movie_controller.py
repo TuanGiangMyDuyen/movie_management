@@ -161,7 +161,7 @@ class MovieController:
     def get_api():
         get_api = GetApi()
         movies = Movie.get_movies()
-        movies_api = get_api.get_top_popular_movies(5)
+        movies_api = get_api.get_top_popular_movies(10)
         for movie_api in movies_api:
             flag = True
             for movie in movies:
