@@ -1,97 +1,124 @@
-Movie Management App
-Giới thiệu
-Movie Management App là một ứng dụng đơn giản và tiện lợi giúp người dùng quản lý danh sách phim và thông tin người dùng. Ứng dụng được phát triển bằng Python với giao diện người dùng thân thiện sử dụng thư viện tkinter. Đây là giải pháp lý tưởng cho các rạp chiếu phim nhỏ hoặc người dùng cá nhân muốn quản lý lịch chiếu phim và thông tin tài khoản.
-Ứng dụng hỗ trợ các tính năng chính như:
 
-Quản lý danh sách phim (thêm, sửa, xóa phim).
-Quản lý thông tin người dùng (đăng nhập, đăng ký).
-Hiển thị thông tin phim với hình ảnh minh họa.
+# 🎬 Movie Management App
 
-Tính năng
+## 📖 Giới thiệu
 
-Giao diện đăng nhập: Người dùng có thể đăng nhập với tài khoản đã đăng ký.
-Quản lý phim: Thêm, sửa, xóa thông tin phim bao gồm tên phim, ngày chiếu, và hình ảnh poster.
-Lưu trữ dữ liệu: Dữ liệu phim và người dùng được lưu trong các file JSON (movies.json, users.json) trong thư mục datas.
-Hỗ trợ hình ảnh: Hiển thị hình ảnh phim (upload ảnh từ máy cục bộ lên cloud).
-Đóng gói tiện lợi: Ứng dụng được đóng gói thành file .exe duy nhất, dễ dàng cài đặt qua trình cài đặt được tạo bởi Inno Setup.
+**Movie Management App** là một ứng dụng đơn giản và tiện lợi giúp người dùng quản lý danh sách phim và thông tin người dùng. Ứng dụng được phát triển bằng **Python** với giao diện người dùng thân thiện sử dụng thư viện **Tkinter**. Đây là giải pháp lý tưởng cho các rạp chiếu phim nhỏ hoặc người dùng cá nhân muốn quản lý lịch chiếu phim và tài khoản đăng nhập.
 
-Yêu cầu hệ thống
+### 🔑 Các tính năng chính:
+- Quản lý danh sách phim (thêm, sửa, xóa).
+- Quản lý thông tin người dùng (đăng nhập, đăng ký).
+- Hiển thị thông tin phim với hình ảnh minh họa (poster).
 
-Hệ điều hành: Windows 7 trở lên.
-Dung lượng: Khoảng 60MB (bao gồm file cài đặt và dữ liệu).
-Quyền truy cập: Người dùng không cần quyền quản trị viên để chạy ứng dụng .
+---
 
-Hướng dẫn cài đặt
+## 🚀 Tính năng chi tiết
 
-Tải file cài đặt:
+- **Giao diện đăng nhập**: Người dùng có thể đăng nhập bằng tài khoản đã đăng ký.
+- **Quản lý phim**: Thêm, sửa, xóa thông tin phim như tên phim, ngày chiếu, hình ảnh poster,...
+- **Lưu trữ dữ liệu**: Sử dụng file JSON (`movies.json`, `users.json`) trong thư mục `datas`.
+- **Hỗ trợ hình ảnh**: Hiển thị hình ảnh phim (poster) với khả năng upload từ máy lên cloud.
+- **Đóng gói tiện lợi**: Ứng dụng được đóng gói thành file `.exe` duy nhất, cài đặt dễ dàng bằng **Inno Setup**.
 
-Tải file MovieManagementSetup.exe từ kho lưu trữ hoặc liên hệ nhà phát triển.
+---
 
+## 🖥️ Yêu cầu hệ thống
 
-Cài đặt:
+- **Hệ điều hành**: Windows 7 trở lên.
+- **Dung lượng**: Khoảng 60MB (bao gồm trình cài đặt và dữ liệu).
+- **Quyền truy cập**: Không yêu cầu quyền quản trị viên.
 
-Chạy file MovieManagementSetup.exe.
-Làm theo hướng dẫn trên màn hình để cài đặt vào thư mục mặc định (C:\Program Files\MovieManagementApp).
+---
 
+## 📦 Hướng dẫn cài đặt
 
-Chạy ứng dụng:
+### 1. Tải file cài đặt
+- Tải file `MovieManagementSetup.exe` từ kho lưu trữ hoặc liên hệ nhà phát triển.
 
-Sau khi cài đặt, mở ứng dụng từ Start Menu (biểu tượng "Movie Management").
-Đăng nhập bằng tài khoản mặc định (nếu có) hoặc đăng ký tài khoản mới.
+### 2. Cài đặt
+- Chạy file `MovieManagementSetup.exe`.
+- Làm theo hướng dẫn trên màn hình để cài vào thư mục mặc định:  
+  `C:\Program Files\MovieManagementApp`
 
+### 3. Chạy ứng dụng
+- Mở ứng dụng từ Start Menu với biểu tượng **"Movie Management"**.
+- Đăng nhập bằng tài khoản mặc định hoặc tạo tài khoản mới.
 
+---
 
-Hướng dẫn sử dụng
+## 🧑‍💻 Hướng dẫn sử dụng
 
-Đăng nhập:
+### Đăng nhập
+- Nhập tên người dùng và mật khẩu để truy cập.
+- **Tài khoản mặc định**:  
+  `Username: admin`  
+  `Password: admin`
 
-Nhập tên người dùng và mật khẩu để truy cập.
-Tài khoản mặc định của admin: admin / admin (nếu chưa thay đổi).
+### Đăng ký tài khoản mới
+- Nhấn vào nút **"Đăng ký"** tại giao diện đăng nhập.
+- Nhập đầy đủ thông tin người dùng: tên đăng nhập, mật khẩu, email.
+- Nhấn **"Xác nhận"** để tạo tài khoản.
+- Sau khi đăng ký thành công, bạn có thể quay lại giao diện đăng nhập để sử dụng tài khoản mới.
 
+### Quản lý phim
+- **Thêm phim**: Nhập thông tin phim đầy đủ.
+- **Sửa/Xóa phim**: Chọn phim từ danh sách và thao tác trực tiếp.
 
-Quản lý phim:
+### Quản lý người dùng
+- Đăng ký tài khoản mới nếu chưa có.
+- Dữ liệu người dùng được lưu tại: `MovieManagementApp/datas/users.json`
 
-Thêm phim: Nhập thông tin phim.
-Sửa/xóa phim: Chọn phim từ danh sách và thực hiện thao tác.
+---
 
+## 📂 Cấu trúc dự án
 
-Quản lý người dùng:
-
-Đăng ký tài khoản mới nếu cần.
-Dữ liệu người dùng được lưu tự động trongMovieManagementApp\datas.
-
-
-
-Cấu trúc dự án
+```
 MovieManagementApp/
-├── main.py              # File chính của ứng dụng
-├── views/               # Thư mục chứa các file giao diện
+├── main.py                  # File chính của ứng dụng
+├── views/                   # Giao diện người dùng (UI)
 │   ├── login_user_view.py
 │   ├── user_view.py
 │   └── ...
-├── controllers/               # Thư mục chứa các file logic code
+├── controllers/             # Xử lý logic (Controller)
 │   ├── movie_controller.py
 │   ├── user_controller.py
 │   └── ...
-├── models/               # Thư mục chứa các file xử lý dữ liệu
-│   ├── user_model.py
+├── models/                  # Quản lý dữ liệu (Model)
 │   ├── movie_model.py
+│   ├── user_model.py
 │   └── ...
-├── utils/               # Thư mục chứa các file tiện ích
+├── utils/                   # Các chức năng tiện ích
 │   ├── get_api.py
 │   ├── send_mail.py
 │   └── ...
-├── images/              # Thư mục chứa hình ảnh
+├── images/                  # Hình ảnh minh họa
 │   ├── logo.png
 │   └── movie.png
-├── datas/               # Thư mục lưu file JSON
+├── datas/                   # Dữ liệu lưu trữ
 │   ├── movies.json
 │   └── users.json
+```
 
-Công nghệ sử dụng
+---
 
-Ngôn ngữ: Python 3.x
-Giao diện: tkinter
-Hình ảnh: Pillow (hỗ trợ hiển thị hình ảnh), Cloundinary (Hỗ trợ lưu trữ hình ảnh)
-Lưu trữ: File JSON
-Đóng gói: PyInstaller (tạo file .exe), Inno Setup (tạo trình cài đặt)
+## 🛠️ Công nghệ sử dụng
+
+| Công nghệ       | Vai trò                                 |
+|----------------|------------------------------------------|
+| Python 3.x     | Ngôn ngữ chính                           |
+| Tkinter        | Giao diện người dùng                     |
+| Pillow         | Hiển thị và xử lý hình ảnh               |
+| Cloudinary     | Lưu trữ hình ảnh poster trên cloud       |
+| JSON           | Lưu trữ dữ liệu người dùng và phim       |
+| PyInstaller    | Đóng gói ứng dụng thành `.exe`           |
+| Inno Setup     | Tạo trình cài đặt chuyên nghiệp           |
+
+---
+
+## 📧 Liên hệ
+
+Nếu bạn gặp lỗi hoặc cần hỗ trợ, vui lòng liên hệ nhà phát triển để được hỗ trợ nhanh nhất.
+
+---
+
+⭐ **Cảm ơn bạn đã sử dụng Movie Management App!**
