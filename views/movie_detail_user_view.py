@@ -113,7 +113,7 @@ class MovieDetailView:
 
         # Ngày chiếu
         release_date_frame = Frame(info_container, bg="#222222")
-        Label(release_date_frame, text="Ngày phát hành:", fg="white", bg="#222222",
+        Label(release_date_frame, text="Ngày chiếu:", fg="white", bg="#222222",
               font=("Montserrat", 10, "bold"), anchor="w").pack(side="left")
         Label(release_date_frame, text=self.movie["show_date"], fg="white", bg="#222222",
               font=("Montserrat", 10), wraplength=200, anchor="w", justify="left").pack(side="left", padx=(5, 0))

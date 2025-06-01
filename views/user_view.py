@@ -7,7 +7,7 @@ from PIL import Image, ImageTk
 from controllers.movie_controller import MovieController
 from models.movie_model import Movie
 from io import BytesIO
-from views import movie_detail_view
+from views import movie_detail_user_view
 
 
 class MovieUserView:
@@ -157,7 +157,7 @@ class MovieUserView:
     def open_link(self, e, movie):
         # Nếu cửa sổ chi tiết chưa tồn tại hoặc đã bị đóng, tạo mới
         if self.detail_movie is None or not self.detail_movie.movie_window.winfo_exists():
-            self.detail_movie = movie_detail_view.MovieDetailView(self.root, movie)
+            self.detail_movie = movie_detail_user_view.MovieDetailView(self.root, movie)
         else:
             # Nếu cửa sổ đã tồn tại, cập nhật nội dung với phim mới
             self.detail_movie.update_movie(movie)

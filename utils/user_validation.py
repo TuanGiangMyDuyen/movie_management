@@ -29,7 +29,7 @@ class UserValidation:
             try:
                 show_date = datetime.strptime(self.userInfo['dob'], "%d/%m/%Y")
             except ValueError:
-                return False, "Ngày phát hành phải theo định dạng DD/MM/YYYY (VD: 01/06/2025)"
+                return False, "Ngày sinh phải theo định dạng DD/MM/YYYY (VD: 01/06/2025)"
 
         # Kiểm tra nếu người dùng không nhập thì cho rỗng
         if self.userInfo['fullname'] == "Nhập Họ và Tên":

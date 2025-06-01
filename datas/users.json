@@ -3,34 +3,18 @@
         {
             "username": "krathdev",
             "password": "123",
-            "fullname": "Phan Tuấn Giang",
-            "email": "krath.dev@gmail.com",
-            "phone": "0369619101",
-            "dob": "12/02/2005"
-        },
-        {
-            "username": "tuangiang05",
-            "password": "12345",
-            "fullname": "A",
-            "email": "a@a.com",
-            "phone": "03254755869",
-            "dob": "12/02/2005"
-        },
-        {
-            "username": "ZuynZ",
-            "password": "123",
-            "fullname": "Nguyễn Thị Mỹ Duyên",
-            "email": "20032005myduyen@gmail.com",
-            "phone": "0364949597",
-            "dob": "20/03/2005"
-        },
-        {
-            "username": "yang05",
-            "password": "123",
             "fullname": "",
-            "email": "a@a.com",
+            "email": "krath.dev@gmail.com",
             "phone": "",
             "dob": ""
+        },
+        {
+            "username": "tuanyang05",
+            "password": "123",
+            "fullname": "Phan Tuấn Giang",
+            "email": "tuangyang05@gmail.com",
+            "phone": "0369619101",
+            "dob": "12/02/2005"
         }
     ],
     "admins": [

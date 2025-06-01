@@ -18,7 +18,7 @@ class UpdateMovieView:
         self.STATUS = ['Đang chiếu', 'Ngưng chiếu']
         # Tạo cửa sổ nhập thông tin phim mới
         self.update_win = Toplevel(self.root)
-        self.update_win.title("Thêm phim mới")
+        self.update_win.title("Chỉnh sửa phim")
         self.update_win.geometry("700x400+350+250")
         self.update_win.config(bg="#213448")
 

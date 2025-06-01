@@ -1,142 +1,272 @@
 [
     {
-        "id": "12aef0ef-e7ed-4421-a60b-567e8d520771",
-        "name": "Mật Vụ Phụ Hồ",
-        "genre": "Phim Hành Động",
-        "director": "David Ayer",
+        "id": "a33747f1-2b57-419b-8b38-abed6f6a2fd7",
+        "name": "Ballerina",
+        "genre": "Hành Động",
+        "director": "Lee Chung-hyun",
         "actors": [
-            "Jason Statham",
-            "Jason Flemyng",
-            "Merab Ninidze"
+            "Jeon Jong-seo",
+            "Kim Ji-hoon"
         ],
-        "language": "en",
+        "language": "ko",
         "rated": "R",
-        "description": "Levon Cade - cựu biệt kích tinh nhuệ thuộc lực lượng Thủy quân Lục chiến Hoàng gia Anh. Sau khi nghỉ hưu, anh sống cuộc đời yên bình là một công nhân xây dựng tại Chicago (Mỹ). Levon có mối quan hệ rất tốt với gia đình ông chủ Joe Garcia (Michael Peña). Một ngày nọ, cô con gái tuổi teen Jenny (Arianna Rivas) của Joe bị bắt cóc khiến chàng cựu quân nhân phải sử dụng lại các kỹ năng giết chóc của mình để giúp đỡ.",
-        "show_date": "31/05/2025",
-        "duration_minutes": 116,
-        "status": "Ngưng chiếu",
-        "showtime": "09:00",
-        "room": "PC003",
+        "description": "Một bộ phim hành động kịch tính về một nữ sát thủ truy tìm công lý.",
+        "show_date": "05/06/2025",
+        "duration_minutes": 117,
+        "status": "Đang chiếu",
+        "showtime": "19:00",
+        "room": "PC007",
         "total_seats": 50,
         "available_seats": 50,
         "ticket_price": 120000,
-        "showtime_type": "3D",
-        "poster_url": "https://image.tmdb.org/t/p/w500/qmVVc6ZVw9PEwkr4G0Obmlg7woC.jpg",
+        "showtime_type": "IMAX",
+        "poster_url": "https://res.cloudinary.com/dyvkrlz5i/image/upload/v1748712907/vietnam_ballerina_intl_poster_2025x3000_qyg0nc.jpg",
         "showtimes": {
-            "start_time": "09:00",
-            "end_time": "10:56"
+            "start_time": "19:00",
+            "end_time": "20:57"
         }
     },
     {
-        "id": "638bf1f3-2e9c-435a-9522-7f1d3bcbca35",
-        "name": "Bí Mật Kinh Hoàng",
-        "genre": "Phim Kinh Dị",
-        "director": "David F. Sandberg",
+        "id": "b1234567-89ab-4cde-9f12-3456789abcde",
+        "name": "Dune: Part Two",
+        "genre": "Khoa Học Viễn Tưởng",
+        "director": "Denis Villeneuve",
         "actors": [
-            "Ella Rubin",
-            "Michael Cimino",
-            "Odessa A'zion"
+            "Timothée Chalamet",
+            "Zendaya"
+        ],
+        "language": "en",
+        "rated": "PG-13",
+        "description": "Paul Atreides tiếp tục hành trình định mệnh để thống nhất sa mạc Arrakis.",
+        "show_date": "05/06/2025",
+        "duration_minutes": 166,
+        "status": "Đang chiếu",
+        "showtime": "09:00",
+        "room": "PC001",
+        "total_seats": 50,
+        "available_seats": 50,
+        "ticket_price": 150000,
+        "showtime_type": "IMAX",
+        "poster_url": "https://res.cloudinary.com/dyvkrlz5i/image/upload/v1748712969/MV5BNTc0YmQxMjEtODI5MC00NjFiLTlkMWUtOGQ5NjFmYWUyZGJhXkEyXkFqcGc_._V1__m9njj5.jpg",
+        "showtimes": {
+            "start_time": "09:00",
+            "end_time": "11:46"
+        }
+    },
+    {
+        "id": "c2345678-90bc-5def-a123-4567890bcdef",
+        "name": "Oppenheimer",
+        "genre": "Tiểu Sử",
+        "director": "Christopher Nolan",
+        "actors": [
+            "Cillian Murphy",
+            "Emily Blunt"
         ],
         "language": "en",
         "rated": "R",
-        "description": "Không có",
-        "show_date": "01/01/2001",
-        "duration_minutes": 103,
+        "description": "Câu chuyện về J. Robert Oppenheimer và sự phát triển của bom nguyên tử.",
+        "show_date": "05/06/2025",
+        "duration_minutes": 180,
+        "status": "Đang chiếu",
+        "showtime": "11:30",
+        "room": "PC002",
+        "total_seats": 50,
+        "available_seats": 50,
+        "ticket_price": 130000,
+        "showtime_type": "2D",
+        "poster_url": "https://res.cloudinary.com/dyvkrlz5i/image/upload/v1748713017/p3_hpouwk.jpg",
+        "showtimes": {
+            "start_time": "11:30",
+            "end_time": "14:30"
+        }
+    },
+    {
+        "id": "d3456789-01cd-6ef0-b234-5678901cdef0",
+        "name": "Poor Things",
+        "genre": "Hài Hước",
+        "director": "Yorgos Lanthimos",
+        "actors": [
+            "Emma Stone",
+            "Mark Ruffalo"
+        ],
+        "language": "en",
+        "rated": "R",
+        "description": "Hành trình kỳ lạ của Bella Baxter trong một thế giới giả tưởng.",
+        "show_date": "05/06/2025",
+        "duration_minutes": 141,
+        "status": "Đang chiếu",
+        "showtime": "14:00",
+        "room": "PC003",
+        "total_seats": 50,
+        "available_seats": 50,
+        "ticket_price": 110000,
+        "showtime_type": "2D",
+        "poster_url": "https://res.cloudinary.com/dyvkrlz5i/image/upload/v1748713060/p4_nufbrx.jpg",
+        "showtimes": {
+            "start_time": "14:00",
+            "end_time": "16:21"
+        }
+    },
+    {
+        "id": "e4567890-12de-7f01-c345-6789012def01",
+        "name": "The Holdovers",
+        "genre": "Hài Kịch",
+        "director": "Alexander Payne",
+        "actors": [
+            "Paul Giamatti",
+            "Da'Vine Joy Randolph"
+        ],
+        "language": "en",
+        "rated": "R",
+        "description": "Một giáo viên, học sinh và nhân viên căng tin bị mắc kẹt trong kỳ nghỉ Giáng sinh.",
+        "show_date": "05/06/2025",
+        "duration_minutes": 133,
+        "status": "Đang chiếu",
+        "showtime": "16:30",
+        "room": "PC004",
+        "total_seats": 50,
+        "available_seats": 50,
+        "ticket_price": 100000,
+        "showtime_type": "2D",
+        "poster_url": "https://res.cloudinary.com/dyvkrlz5i/image/upload/v1748713095/p5_mib5sh.jpg",
+        "showtimes": {
+            "start_time": "16:30",
+            "end_time": "18:43"
+        }
+    },
+    {
+        "id": "f5678901-23ef-8g12-d456-7890123efg12",
+        "name": "Barbie",
+        "genre": "Hài Hước",
+        "director": "Greta Gerwig",
+        "actors": [
+            "Margot Robbie",
+            "Ryan Gosling"
+        ],
+        "language": "en",
+        "rated": "PG-13",
+        "description": "Barbie khám phá thế giới thực trong một cuộc phiêu lưu đầy màu sắc.",
+        "show_date": "05/06/2025",
+        "duration_minutes": 114,
+        "status": "Đang chiếu",
+        "showtime": "21:30",
+        "room": "PC005",
+        "total_seats": 50,
+        "available_seats": 50,
+        "ticket_price": 110000,
+        "showtime_type": "2D",
+        "poster_url": "https://res.cloudinary.com/dyvkrlz5i/image/upload/v1748713247/71WYSj01vNL._AC_UF894_1000_QL80__dtp42b.jpg",
+        "showtimes": {
+            "start_time": "21:30",
+            "end_time": "23:24"
+        }
+    },
+    {
+        "id": "g6789012-34fg-9h23-e567-8901234fgh23",
+        "name": "The Zone of Interest",
+        "genre": "Lịch Sử",
+        "director": "Jonathan Glazer",
+        "actors": [
+            "Christian Friedel",
+            "Sandra Hüller"
+        ],
+        "language": "de",
+        "rated": "PG-13",
+        "description": "Cuộc sống của một gia đình Đức Quốc xã bên cạnh trại tập trung Auschwitz.",
+        "show_date": "05/06/2025",
+        "duration_minutes": 105,
         "status": "Đang chiếu",
         "showtime": "09:00",
+        "room": "PC006",
+        "total_seats": 50,
+        "available_seats": 50,
+        "ticket_price": 100000,
+        "showtime_type": "2D",
+        "poster_url": "https://res.cloudinary.com/dyvkrlz5i/image/upload/v1748713285/p6_mxy2ks.jpg",
+        "showtimes": {
+            "start_time": "09:00",
+            "end_time": "10:45"
+        }
+    },
+    {
+        "id": "h7890123-45gh-0i34-f678-9012345ghi34",
+        "name": "Past Lives",
+        "genre": "Lãng Mạn",
+        "director": "Celine Song",
+        "actors": [
+            "Greta Lee",
+            "Teo Yoo"
+        ],
+        "language": "ko",
+        "rated": "PG-13",
+        "description": "Hai người bạn thời thơ ấu tái hợp sau nhiều năm xa cách.",
+        "show_date": "05/06/2025",
+        "duration_minutes": 106,
+        "status": "Đang chiếu",
+        "showtime": "11:30",
+        "room": "PC007",
+        "total_seats": 50,
+        "available_seats": 50,
+        "ticket_price": 100000,
+        "showtime_type": "2D",
+        "poster_url": "https://res.cloudinary.com/dyvkrlz5i/image/upload/v1748713340/p7_dlohip.jpg",
+        "showtimes": {
+            "start_time": "11:30",
+            "end_time": "13:16"
+        }
+    },
+    {
+        "id": "i8901234-56hi-1j45-g789-0123456hij45",
+        "name": "Killers of the Flower Moon",
+        "genre": "Tội Phạm",
+        "director": "Martin Scorsese",
+        "actors": [
+            "Leonardo DiCaprio",
+            "Lily Gladstone"
+        ],
+        "language": "en",
+        "rated": "R",
+        "description": "Câu chuyện về các vụ giết người bí ẩn trong bộ lạc Osage.",
+        "show_date": "05/06/2025",
+        "duration_minutes": 206,
+        "status": "Đang chiếu",
+        "showtime": "14:00",
+        "room": "PC001",
+        "total_seats": 50,
+        "available_seats": 50,
+        "ticket_price": 140000,
+        "showtime_type": "IMAX",
+        "poster_url": "https://res.cloudinary.com/dyvkrlz5i/image/upload/v1748713391/Killers_of_the_Flower_Moon_film_poster_g3epm5.jpg",
+        "showtimes": {
+            "start_time": "14:00",
+            "end_time": "17:26"
+        }
+    },
+    {
+        "id": "j9012345-67ij-2k56-h890-1234567ijk56",
+        "name": "Anatomy of a Fall",
+        "genre": "Tâm Lý",
+        "director": "Justine Triet",
+        "actors": [
+            "Sandra Hüller",
+            "Swann Arlaud"
+        ],
+        "language": "fr",
+        "rated": "R",
+        "description": "Một vụ án giết người phức tạp được phân tích qua phiên tòa.",
+        "show_date": "05/06/2025",
+        "duration_minutes": 151,
+        "status": "Đang chiếu",
+        "showtime": "16:30",
         "room": "PC002",
         "total_seats": 50,
         "available_seats": 50,
         "ticket_price": 120000,
         "showtime_type": "2D",
-        "poster_url": "https://image.tmdb.org/t/p/w500/544g85T0znqQxFOWzwOdUEPpZkl.jpg",
+        "poster_url": "https://res.cloudinary.com/dyvkrlz5i/image/upload/v1748713422/images_n65unv.jpg",
         "showtimes": {
-            "start_time": "09:00",
-            "end_time": "10:43"
-        }
-    },
-    {
-        "id": "2d735a3c-4b3e-42f2-ac2c-2407289d8ce1",
-        "name": "Lưỡi hái tử thần 6: Huyết thống",
-        "genre": "Phim Kinh Dị",
-        "director": "Zach Lipovsky",
-        "actors": [
-            "Kaitlyn Santa Juana",
-            "Teo Briones",
-            "Rya Kihlstedt"
-        ],
-        "language": "en",
-        "rated": "R",
-        "description": "Thương hiệu kinh dị đình đám Hollywood Final Destination sẽ trở lại với phần phim mới, hứa hẹn khuấy đảo phòng vé mùa hè 2025. Final Destination: Bloodlines là phần thứ 6 trong series, và cho đến hiện tại, các thông tin về nội dung phần phim này vẫn đang được giữ kín. Bộ đôi Zach Lipovsky và Adam Stein được chọn từ hơn 200 ứng viên để ngồi ghế đạo diễn, trong khi Guy Busick – biên kịch của Ready or Not sẽ chấp bút cho bộ phim. Tony Todd – gương mặt quen thuộc của series cũng sẽ trở lại trong phần 6 với vai diễn William Bludworth.",
-        "show_date": "01/01/2001",
-        "duration_minutes": 110,
-        "status": "Đang chiếu",
-        "showtime": "09:00",
-        "room": "PC001",
-        "total_seats": 50,
-        "available_seats": 50,
-        "ticket_price": 120000,
-        "showtime_type": "2D",
-        "poster_url": "https://image.tmdb.org/t/p/w500/6WxhEvFsauuACfv8HyoVX6mZKFj.jpg",
-        "showtimes": {
-            "start_time": "09:00",
-            "end_time": "10:50"
-        }
-    },
-    {
-        "id": "0f5a557c-1fa8-48da-ad82-f610ee2972fb",
-        "name": "Một bộ phim Minecraft",
-        "genre": "Phim Gia Đình",
-        "director": "Jared Hess",
-        "actors": [
-            "Jason Momoa",
-            "Jack Black",
-            "Sebastian Eugene Hansen"
-        ],
-        "language": "en",
-        "rated": "PG",
-        "description": "Chào mừng bạn đến với thế giới của Minecraft, nơi sự sáng tạo không chỉ giúp bạn chế tạo mà còn là yếu tố quan trọng để sống sót! Bốn kẻ lạc lõng - Garrett “The Garbage Man” Garrison (Momoa), Henry (Hansen), Natalie (Myers) và Dawn (Brooks) - bất ngờ gặp rắc rối khi họ bị kéo qua cánh cửa bí ẩn dẫn đến Overworld: một thế giới kỳ lạ được tạo bởi những khối lập phương và phát triển nhờ vào trí tưởng tượng. Để trở về nhà, họ cần phải làm chủ được thế giới này (và bảo vệ nó khỏi những thực thể tà ác như Piglins và Thây Ma) trong khi dấn thân vào chuyến phiêu lưu màu nhiệm với một thợ chế tạo chuyên nghiệp và khó lường - Steve (Black). Chuyến hành trình này sẽ thách thức sự can đảm của cả năm người, thúc đẩy họ tìm lại với những phẩm chất làm nên sự đặc biệt của riêng mình,… đồng thời là những kỹ năng cần thiết để trở lại với thế giới thật.",
-        "show_date": "01/01/2001",
-        "duration_minutes": 101,
-        "status": "Đang chiếu",
-        "showtime": "09:00",
-        "room": "PC001",
-        "total_seats": 50,
-        "available_seats": 50,
-        "ticket_price": 120000,
-        "showtime_type": "2D",
-        "poster_url": "https://image.tmdb.org/t/p/w500/wRrGBv4uNofBVyShxfS0iugbcm8.jpg",
-        "showtimes": {
-            "start_time": "09:00",
-            "end_time": "10:41"
-        }
-    },
-    {
-        "id": "2248019a-ccd8-4973-9207-1ab89ad84c15",
-        "name": "Lilo & Stitch",
-        "genre": "Phim Gia Đình",
-        "director": "Dean Fleischer Camp",
-        "actors": [
-            "Maia Kealoha",
-            "Sydney Agudong",
-            "Chris Sanders"
-        ],
-        "language": "en",
-        "rated": "PG",
-        "description": "",
-        "show_date": "01/06/2025",
-        "duration_minutes": 108,
-        "status": "Đang chiếu",
-        "showtime": "09:00",
-        "room": "PC001",
-        "total_seats": 50,
-        "available_seats": 50,
-        "ticket_price": 120000,
-        "showtime_type": "2D",
-        "poster_url": "https://image.tmdb.org/t/p/w500/aOfmWQHIdunw4Xnc4ZL7DUDDgNl.jpg",
-        "showtimes": {
-            "start_time": "09:00",
-            "end_time": "10:48"
+            "start_time": "16:30",
+            "end_time": "19:01"
         }
     }
 ]

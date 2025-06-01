@@ -55,6 +55,6 @@ class MovieValidation:
             if show_date.date() < today.date():
                 return False, "Ngày phát hành không được nhỏ hơn ngày hôm nay!"
         except ValueError:
-            return False, "Ngày phát hành phải theo định dạng DD/MM/YYYY (VD: 01-06-2025)"
+            return False, "Ngày phát hành phải theo định dạng DD/MM/YYYY (VD: 01/06/2025)"
 
         return True, ""
