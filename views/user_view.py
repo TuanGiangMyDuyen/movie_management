@@ -1,11 +1,9 @@
 from tkinter import *
 from tkinter import messagebox
-import os
 import requests
 from PIL import Image, ImageTk
 
 from controllers.movie_controller import MovieController
-from models.movie_model import Movie
 from io import BytesIO
 from views import movie_detail_user_view
 
@@ -27,9 +25,6 @@ class MovieUserView:
         self.main_Fr.place(x=5, y=4)
         # --------------------------------------------------------------
         # logo
-        image_path = os.path.join(os.path.dirname(__file__), "..", "images", "logo.png")
-        image = Image.open(image_path)
-        self.img = ImageTk.PhotoImage(image)
         self.img = PhotoImage(file="images/logo.png")
         Label(self.movie_window, image=self.img, bg="#222222").place(x=100, y=4)
         Label(self.movie_window, text="Z+ Plus", fg="white", bg="#222222", font=("Montserrat", 13, "bold")).place(x=180,
@@ -41,9 +36,6 @@ class MovieUserView:
         Frame(self.movie_window, width=390, height=39, bg="#444444", highlightbackground="white",
               highlightthickness=2).place(
             x=676, y=24)
-        imageSearch_path = os.path.join(os.path.dirname(__file__), "..", "images", "kinhlup.png")
-        imgSearch = Image.open(imageSearch_path)
-        self.imgSearch = ImageTk.PhotoImage(imgSearch)
         self.imgSearch = PhotoImage(file="images/kinhlup.png")
         Label(self.movie_window, image=self.imgSearch, bg="#444444").place(x=685, y=27)
         self.search = Entry(self.movie_window, fg="white", font=("Arial", 10), width=45, bg="#444444", bd=0)

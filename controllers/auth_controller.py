@@ -27,7 +27,7 @@ class AuthController:
             else:
                 del self.userInfo['password1']
             user = userModel.get_user("users")
-            user1 = userModel.get_user_by_email("users")
+            user1 = userModel.get_user_by_email(self.userInfo['email'])
             if user:
                 return False, "Tên người dùng đã tồn tại!"
             elif user1:

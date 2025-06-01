@@ -23,7 +23,7 @@ class MovieDetailView:
         self.movie_window.resizable(False, False)
 
         # Logo
-        image_path = os.path.join(os.path.dirname(__file__), "..", "images", "logo.png")
+        image_path = "images/logo.png"
         image = Image.open(image_path)
         resized_image = image.resize((50, 50))
         self.img = ImageTk.PhotoImage(resized_image)
